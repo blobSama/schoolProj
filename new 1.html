@@ -1,0 +1,41 @@
+<html>
+	<head> 
+		<style>
+			#border1{
+				border-radius: 10%;
+				width: 200px;
+				height: 500px;
+				padding:30px;
+				border: 2px solid black;
+				text-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+	<center>
+	<div id="border1">
+		<h1> Get In Touch! </h1>
+		hello world!<br/>
+		<form action = "?" method = "post">
+		Name:<font color="red">*</font><br/>
+		<input type="text" id="name" name="name" required><br/>
+		Email Adress:<font color="red">*</font><br/>
+		<input type="text" id="mail" name="mail" placeholder = "name@gmail.com" required><br/>
+		Telephone: <br/>
+		<input type="number" id="phone" name="phone"><br/>
+		Enquiry:<br/>
+		<select id="enquiry" name="enquiry">
+			<option value="General">General</option>
+			<option value="Typical">Typical</option>
+			<option value="Other">Other</option>
+		</select><br/>
+		Message:<font color="red">*</font><br/>
+		<textarea rows="8" cols="25" required></textarea><br/>
+		<small><font color="red">*</font> indicates a required field</small>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="submit" value="Submit">
+		</form>
+	</div>
+	</center>
+	</body>
+</html>
