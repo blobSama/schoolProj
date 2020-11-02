@@ -1,61 +1,62 @@
 ﻿<html>
 
 <head>
-    <title> enterInfo </title>
-    <link rel="stylesheet" type="text/css" href="styleSheet.css">
+	<title> Enter Watches </title>
+	<link rel="stylesheet" type="text/css" href="styleSheet.css">
+	<script src="projScript.js"></script>
 </head>
 
 <body>
-    <div id="header">
-        <a id="bttn1" href="Homepage.html">Home Page</a>
-        <a id="bttn1" href="new 1.html">SmartWatch List</a>
-        <a id="bttn1" href="watchInfo.html">Watch Data</a>
-        <a id="bttn1" href="Register.html">Register</a>
-        <a id="bttn1" href="gallery.html">Gallery</a>
-        <a id="bttn1" href="enterInfo.html">Enter watch</a>
-        <input type="text" id="search" name="search" placeholder="Search..." 2d><br>
-    </div>
-    <br />
-    <div id="title">
-        <p>SmartWatch Comparison</p>
-    </div>
-    <footer id="foot1">
-        <p>contact us, etc.</p>
-    </footer>
-    <div id="uploadOut">
-        <div id="uploadIn">
-            <h1 id="cent"> Upload Watch </h1>
-            <form action="?" method="post">
-                <label for="myfile">Picture</label><br />
-                <input type="file" id="myfile" name="myfile"><br /><br />
-                <label for="amnt">Amount<font color="red">*</font></label><br />
-                <input class="in" id="amnt" type="number" required min="0" autofocus /><br /><br />
-                <label for="accnt">I have an account<font color="red">*</font></label><br />
-                <input type="radio" id="no" name="accntExst" />
-                <label for="no">No</label>
-                <input type="radio" id="yes" name="accntExst" />
-                <label for="yes">Yes</label><br /><br />
-                <label for="mail">Email Adress</label><br />
-                <input class="in" type="text" id="mail" name="mail" placeholder="name@gmail.com"><br /><br />
-                <label for="phone">Mobile Number<font color="red">*</font></label><br />
-                <input class="in" placeholder="050-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone" name="phone"><br /><br />
-                <label for="enquiry">Category<font color="red">*</font></label><br />
-                <select class="in" id="enquiry" name="enquiry" required>
-                    <option value="sport">Sport</option>
-                    <option value="dayToDay">Day To Day</option>
-                    <option value="Official">Official</option>
-                    <option value="other">Other</option>
-                </select><br /><br />
-                <label for="ftrs">Features<font color="red">*</font></label><br />
-                <textarea id="ftrs" rows="6" cols="25" required></textarea><br /><br />
-                <label for="cost">Cost<font color="red">*</font></label><br />
-                <input class="in" id="cost" type="number" required min="1" /><br /><br />
-                <small><font color="red">*</font> indicates a required field</small><br />
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset" />
-            </form>
-        </div>
-    </div>
+	<div id="header">
+		<a id="bttn1" href="Homepage.html">Home Page</a>
+		<a id="bttn1" href="new 1.html">SmartWatch List</a>
+		<a id="bttn1" href="watchInfo.html">Watch Data</a>
+		<a id="bttn1" href="Register.html">Register</a>
+		<a id="bttn1" href="gallery.html">Gallery</a>
+		<a id="bttn1" href="enterInfo.html">Enter watch</a>
+		<input type="text" id="search" name="search" placeholder="Search..." 2d><br>
+	</div>
+	<br />
+	<div id="title">
+		<p>SmartWatch Comparison</p>
+	</div>
+	<footer id="foot1">
+		<p>contact us, etc.</p>
+	</footer>
+	<div id="uploadOut">
+		<div id="uploadIn">
+			<h1 id="cent"> Upload Watch </h1>
+			<form action="?" method="post">
+				<label for="myfile">Picture</label><br />
+				<input type="file" id="myfile" name="myfile"><br /><br />
+				<label for="amnt">Amount<font color="red">*</font></label><br />
+				<input class="in" id="amnt" type="number" required min="0" max="1000" autofocus /><br /><br />
+				<label for="accnt">I have an account<font color="red">*</font></label><br />
+				<input type="radio" id="no" name="accntExst"  required/>
+				<label for="no">No</label>
+				<input type="radio" id="yes" name="accntExst" required/>
+				<label for="yes">Yes</label><br /><br />
+				<label for="mail">Email Adress</label><br />
+				<input class="in" type="text" id="mail" name="mail" placeholder="name@gmail.com"><br /><br />
+				<label for="phone">Mobile Number</label><br />
+				<input class="in" placeholder="050-000-0000" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" id="phone" name="phone"><br /><br />
+				<label for="enquiry">Category<font color="red">*</font></label><br />
+				<select id="enquiry" name="enquiry" required>
+					<option value="sport">Sport</option>
+					<option value="dayToDay">Day To Day</option>
+					<option value="Official">Official</option>
+					<option value="other">Other</option>
+				</select><br /><br />
+				<label for="ftrs">Features<font color="red">*</font></label><br />
+				<textarea id="ftrs" rows="6" cols="25" required></textarea><br /><br />
+				<label for="cost">Cost<font color="red">*</font></label><br />
+				<input class="in" id="cost" type="number" required min="1" max=" 1500" /><br /><br />
+				<small><font color="red">*</font> indicates a required field</small><br />
+				<input type="submit" value="Submit"">
+				<input type="reset" value="Reset" />
+			</form>
+		</div>
+	</div>
 </body>
 
 </html>

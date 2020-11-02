@@ -24,13 +24,13 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: row;
     justify-content: space-evenly;
-    background-color: lightblue;
+    background-color: deepskyblue;
     grid-row-gap: 15px;
 }
 
 #header {
     grid-area: header;
-    background-color: #0898cf;
+    background-color: deepskyblue;
     text-size-adjust: auto;
     grid-column-start: 1;
     grid-column-end: 4;
@@ -43,6 +43,11 @@ body {
     color: black;
     margin: 15px 35px;
     font-family: "Courier New", Courier, monospace;
+}
+
+#bttn1 hover{
+    background-color:white;
+    color:darkgoldenrod;
 }
 
 .required {
@@ -116,6 +121,8 @@ img {
     text-align: center;
     grid-column-start: 2;
     grid-column-end: 3;
+    background-color: aquamarine;
+    margin: 15px;
 }
 
 #sub1 {
@@ -157,4 +164,10 @@ img {
     border-right: none;
     border-left: none;
     border-bottom: 1px solid red;
+}
+
+#registOut {
+    border: 2px solid black;
+    background-color: beige;
+    border-radius:25px;
 }
