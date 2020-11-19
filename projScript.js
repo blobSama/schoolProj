@@ -1,16 +1,54 @@
 // JavaScript source file
-function checkForm() {/*
-    validateImage();*/
+function validateForm() {
+    if (document.getElementById("noAccnt").innerHTML == "") {
+        if (document.getElementById("mailWrng").innerHTML == "") {
+            if (document.getElementById("phoneWrng").innerHTML == "") {
+                if (document.getElementById("costWrng").innerHTML == "") {
+                    if (document.getElementById("amntWrng").innerHTML == "") {
+                        if (document.getElementById("ftrsWrng").innerHTML == "") {
+                            document.getElementById("submit").disabled = false;
+                            document.getElementById("submitWrng").innerHTML = "Ready to submit!"
+                        }
+                        else {
+                            document.getElementById("submitWrng").innerHTML = "Please check your input."
+                        }
+                    }
+                    else {
+                        document.getElementById("submitWrng").innerHTML = "Please check your input."
+                    }
+                }
+                else {
+                    document.getElementById("submitWrng").innerHTML = "Please check your input."
+                }
+            }
+            else {
+                document.getElementById("submitWrng").innerHTML = "Please check your input."
+            }
+        }
+        else {
+            document.getElementById("submitWrng").innerHTML = "Please check your input."
+        }
+    }
+    else {
+        document.getElementById("submitWrng").innerHTML = "Please check your input."
+    }
 }
+/*
+function removeMsg() {
+    document.getElementById("submitWrng").innerHTML = ""
+}*/
 
-function validateImage() {
+function hello() {
+    document.getElementById("costWrng").innerHTML = "red";
+}
+/*function validateImage() {
     var file = document.getElementById("myfile");
     var t = file.type.split('/').pop().toLowerCase();
     if (t != ".jpeg" && t != ".jpg" && t != "png" && t != "bmp" && t != "gif") {
         alert('Please select a valid image file');
         document.getElementById("myfile").value = '';
     }
-}
+}*/
 
 function accntCheck() {
     if (document.getElementById('no').checked) {
@@ -23,8 +61,12 @@ function accntCheck() {
     }
 }
 
-function checkPhone() {
-    if (document.getElementById('no').value) {
+function ftrsCheck() {
+    if (document.getElementById("ftrs").value == "") {
+        document.getElementById("ftrsWrng").innerHTML = "Please fill in features.";
+    }
+    else {
+        document.getElementById("ftrsWrng").innerHTML = "";
     }
 }
 

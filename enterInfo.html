@@ -1,9 +1,10 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html>
 
 <head>
 	<title> Enter Watches </title>
 	<link rel="stylesheet" type="text/css" href="styleSheet.css">
-	<script src="projScript.js"> </script>
+	<script src="projScript.js"></script>
 </head>
 
 <body>
@@ -28,23 +29,22 @@
 			<h1 id="cent"> Upload Watch </h1>
 			<form action="?" method="post">
 				<label for="myfile">Picture</label><br />
-				<input type="file" id="myfile" name="myfile" accept="image/*">
-				<label for="myfile" id="fileWrong"></label><br /><br />
+				<input type="file" id="myfile" name="myfile" accept="image/*"><br /><br />
 				<label for="amnt">Amount<font color="red">*</font></label><br />
 				<input class="in" id="amnt" type="number" required onchange="validateAmnt()" autofocus />
-				<br /><label for="amnt" id="amntWrng"></label><br /><br />
+				<br /><label for="amnt" class="lbl1" id="amntWrng">Please fill in amount.</label><br /><br />
 				<label for="accnt">I have an account<font color="red">*</font></label><br />
 				<input type="radio" id="no" name="accntExst" onchange="accntCheck()" required />
 				<label for="no">No</label>
 				<input type="radio" id="yes" name="accntExst" onchange="accntCheck()" required />
 				<label for="yes">Yes</label>
-				<br /><label for="accntExst" id="noAccnt"></label><br /><br />
+				<br /><label for="accntExst" class="lbl1" id="noAccnt">Please choose one.</label><br /><br />
 				<label for="mail">Email Adress</label><br />
 				<input class="in" type="text" id="mail" name="mail" placeholder="name@gmail.com" onchange="ValidateEmail()">
-				<br /><label for="mail" id="mailWrng"></label><br /><br />
+				<br /><label for="mail" class="lbl1" id="mailWrng"></label><br /><br />
 				<label for="phone">Mobile Number</label><br />
 				<input class="in" placeholder="050-000-0000" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" id="phone" name="phone" onchange="ValidatePhone()">
-				<br /><label for="phone" id="phoneWrng"></label><br /><br />
+				<br /><label for="phone" class="lbl1" id="phoneWrng"></label><br /><br />
 				<label for="enquiry">Category<font color="red">*</font></label><br />
 				<select id="enquiry" name="enquiry" required>
 					<option value="sport">Sport</option>
@@ -53,13 +53,16 @@
 					<option value="other">Other</option>
 				</select><br /><br />
 				<label for="ftrs">Features<font color="red">*</font></label><br />
-				<textarea id="ftrs" rows="6" cols="25" required></textarea><br /><br />
+				<textarea id="ftrs" rows="6" cols="25" onchange="ftrsCheck()" required></textarea>
+				<br /><label for="ftrs" class="lbl1" id="ftrsWrng">Please fill in features</label><br /><br />
 				<label for="cost">Cost<font color="red">*</font></label><br />
 				<input class="in" id="cost" type="number" required onchange="validateCost()" />
-				<br /><label for="cost" id="costWrng"></label><br /><br />
+				<br /><label for="cost" class="lbl1" id="costWrng">Please fill in cost</label><br /><br />
 				<small><font color="red">*</font> indicates a required field</small><br />
-				<input type="submit" value="Submit">
-				<input type="reset" value="Reset" />
+				<input type="button" id="check" class="sub1" value="Check form" onclick="validateForm()" />
+				<input type="reset" value="Reset" class="sub1" />
+				<br /><label for="submit" class="lbl1" id="submitWrng"></label><br />
+				<input type="submit" value="Submit" class="sub1" id="submit" disabled />
 			</form>
 		</div>
 	</div>

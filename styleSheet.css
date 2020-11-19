@@ -1,7 +1,7 @@
 table {
     grid-area: grid;
     border: 2px solid rgba(0, 0, 0, 0.582);
-    align-items: left;
+    /*align-items: left;*/
     margin: 20px auto;
     border-width: 2px;
     grid-column-start: 1;
@@ -125,9 +125,13 @@ img {
     margin: 15px;
 }
 
-#sub1 {
-    width: 180px;
-    margin: 20px auto;
+.lbl1{
+    font-size: 14px;
+}
+
+.sub1 {
+    /*width: 180px;*/
+    margin: 5px auto;
     font-family: "Courier New", Courier, monospace;
     background-color: #626466;
     border: none;
