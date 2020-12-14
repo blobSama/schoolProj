@@ -16,7 +16,7 @@ tr{
 th{
 	text-align: center;
 }
-*/
+*/ 
 
 body {
     display: grid;
@@ -35,17 +35,23 @@ body {
     grid-column-start: 1;
     grid-column-end: 4;
 }
+
+#rate{
+    grid
+}
+
 #bttn1 {
     background: none;
     list-style: none;
     font-size:medium;
     border: none;
     color: black;
+    text-decoration:none;
     margin: 15px 35px;
     font-family: "Courier New", Courier, monospace;
 }
 
-#bttn1 hover{
+#bttn1:hover{
     background-color:white;
     color:darkgoldenrod;
 }
