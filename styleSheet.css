@@ -7,16 +7,15 @@ table {
     grid-column-start: 1;
     grid-column-end: 4;
 }
-/*
-tr{ 
-  border-bottom: none;
+
+.row{ 
+  border-bottom: solid;
   border-width: 1px 0;
 }
 
 th{
 	text-align: center;
 }
-*/ 
 
 body {
     display: grid;
